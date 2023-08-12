@@ -3,3 +3,6 @@
 dist/
 certs/
 node_modules/
+
+src/models/sde/*.ts
+src/controllers/sde/*.ts

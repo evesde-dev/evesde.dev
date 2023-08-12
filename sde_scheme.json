@@ -1,0 +1,2350 @@
+{
+	"chrRaces": {
+		"raceID": {
+			"type": "number",
+			"required": true
+		},
+		"raceName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"iconID": {
+			"type": "number",
+			"required": true
+		},
+		"shortDescription": {
+			"key": true,
+			"type": "string",
+			"required": true
+		}
+	},
+	"invTypes": {
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"groupID": {
+			"type": "number",
+			"required": true
+		},
+		"typeName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		},
+		"mass": {
+			"type": "number",
+			"required": true
+		},
+		"volume": {
+			"type": "number",
+			"required": true
+		},
+		"capacity": {
+			"type": "number",
+			"required": true
+		},
+		"portionSize": {
+			"type": "number",
+			"required": true
+		},
+		"raceID": {
+			"type": "string",
+			"required": true
+		},
+		"basePrice": {
+			"type": "number",
+			"required": true
+		},
+		"published": {
+			"type": "number",
+			"required": true
+		},
+		"marketGroupID": {
+			"type": "number",
+			"required": true
+		},
+		"iconID": {
+			"type": "number",
+			"required": true
+		},
+		"soundID": {
+			"type": "string",
+			"required": true
+		},
+		"graphicID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"mapLocationWormholeClasses": {
+		"locationID": {
+			"type": "number",
+			"required": true
+		},
+		"wormholeClassID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"skins": {
+		"skinID": {
+			"type": "number",
+			"required": true
+		},
+		"internalName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"skinMaterialID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"mapConstellationJumps": {
+		"fromRegionID": {
+			"type": "number",
+			"required": true
+		},
+		"fromConstellationID": {
+			"type": "number",
+			"required": true
+		},
+		"toConstellationID": {
+			"type": "number",
+			"required": true
+		},
+		"toRegionID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"industryActivityMaterials": {
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"activityID": {
+			"type": "number",
+			"required": true
+		},
+		"materialTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"quantity": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"solarsystemprecise": {
+		"solarSystemID": {
+			"type": "number",
+			"required": true
+		},
+		"solarSystemName": {
+			"type": "string",
+			"required": true
+		},
+		"x": {
+			"type": "number",
+			"required": true
+		},
+		"y": {
+			"type": "number",
+			"required": true
+		},
+		"z": {
+			"type": "number",
+			"required": true
+		},
+		"security": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"mapCelestialGraphics": {
+		"celestialID": {
+			"type": "number",
+			"required": true
+		},
+		"heightMap1": {
+			"type": "number",
+			"required": true
+		},
+		"heightMap2": {
+			"type": "number",
+			"required": true
+		},
+		"shaderPreset": {
+			"type": "number",
+			"required": true
+		},
+		"population": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"ramAssemblyLineStations": {
+		"stationID": {
+			"type": "number",
+			"required": true
+		},
+		"assemblyLineTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"quantity": {
+			"type": "number",
+			"required": true
+		},
+		"stationTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"ownerID": {
+			"type": "number",
+			"required": true
+		},
+		"solarSystemID": {
+			"type": "number",
+			"required": true
+		},
+		"regionID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"crpNPCCorporationTrades": {
+		"corporationID": {
+			"type": "number",
+			"required": true
+		},
+		"typeID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"certSkills": {
+		"certID": {
+			"type": "number",
+			"required": true
+		},
+		"skillID": {
+			"type": "number",
+			"required": true
+		},
+		"certLevelInt": {
+			"type": "number",
+			"required": true
+		},
+		"skillLevel": {
+			"type": "number",
+			"required": true
+		},
+		"certLevelText": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"crpNPCCorporationDivisions": {
+		"corporationID": {
+			"type": "number",
+			"required": true
+		},
+		"divisionID": {
+			"type": "number",
+			"required": true
+		},
+		"size": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"trnTranslations": {
+		"tcID": {
+			"type": "number",
+			"required": true
+		},
+		"keyID": {
+			"type": "number",
+			"required": true
+		},
+		"languageID": {
+			"type": "string",
+			"required": true
+		},
+		"text": {
+			"key": true,
+			"type": "string",
+			"required": true
+		}
+	},
+	"ramAssemblyLineTypeDetailPerGroup": {
+		"assemblyLineTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"groupID": {
+			"type": "number",
+			"required": true
+		},
+		"timeMultiplier": {
+			"type": "number",
+			"required": true
+		},
+		"materialMultiplier": {
+			"type": "number",
+			"required": true
+		},
+		"costMultiplier": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"mapJumps": {
+		"stargateID": {
+			"type": "number",
+			"required": true
+		},
+		"destinationID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"staOperations": {
+		"activityID": {
+			"type": "number",
+			"required": true
+		},
+		"operationID": {
+			"type": "number",
+			"required": true
+		},
+		"operationName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		},
+		"fringe": {
+			"type": "number",
+			"required": true
+		},
+		"corridor": {
+			"type": "number",
+			"required": true
+		},
+		"hub": {
+			"type": "number",
+			"required": true
+		},
+		"border": {
+			"type": "number",
+			"required": true
+		},
+		"ratio": {
+			"type": "number",
+			"required": true
+		},
+		"caldariStationTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"minmatarStationTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"amarrStationTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"gallenteStationTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"joveStationTypeID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"invItems": {
+		"itemID": {
+			"type": "number",
+			"required": true
+		},
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"ownerID": {
+			"type": "number",
+			"required": true
+		},
+		"locationID": {
+			"type": "number",
+			"required": true
+		},
+		"flagID": {
+			"type": "number",
+			"required": true
+		},
+		"quantity": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"invMetaGroups": {
+		"metaGroupID": {
+			"type": "number",
+			"required": true
+		},
+		"metaGroupName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		},
+		"iconID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"industryActivity": {
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"activityID": {
+			"type": "number",
+			"required": true
+		},
+		"time": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"planetSchematicsTypeMap": {
+		"schematicID": {
+			"type": "number",
+			"required": true
+		},
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"quantity": {
+			"type": "number",
+			"required": true
+		},
+		"isInput": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"mapSolarSystems": {
+		"regionID": {
+			"type": "number",
+			"required": true
+		},
+		"constellationID": {
+			"type": "number",
+			"required": true
+		},
+		"solarSystemID": {
+			"type": "number",
+			"required": true
+		},
+		"solarSystemName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"x": {
+			"type": "number",
+			"required": true
+		},
+		"y": {
+			"type": "number",
+			"required": true
+		},
+		"z": {
+			"type": "number",
+			"required": true
+		},
+		"xMin": {
+			"type": "number",
+			"required": true
+		},
+		"xMax": {
+			"type": "number",
+			"required": true
+		},
+		"yMin": {
+			"type": "number",
+			"required": true
+		},
+		"yMax": {
+			"type": "number",
+			"required": true
+		},
+		"zMin": {
+			"type": "number",
+			"required": true
+		},
+		"zMax": {
+			"type": "number",
+			"required": true
+		},
+		"luminosity": {
+			"type": "number",
+			"required": true
+		},
+		"border": {
+			"type": "number",
+			"required": true
+		},
+		"fringe": {
+			"type": "number",
+			"required": true
+		},
+		"corridor": {
+			"type": "number",
+			"required": true
+		},
+		"hub": {
+			"type": "number",
+			"required": true
+		},
+		"international": {
+			"type": "number",
+			"required": true
+		},
+		"regional": {
+			"type": "number",
+			"required": true
+		},
+		"constellation": {
+			"type": "string",
+			"required": true
+		},
+		"security": {
+			"type": "number",
+			"required": true
+		},
+		"factionID": {
+			"type": "number",
+			"required": true
+		},
+		"radius": {
+			"type": "number",
+			"required": true
+		},
+		"sunTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"securityClass": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"crpNPCCorporationResearchFields": {
+		"skillID": {
+			"type": "number",
+			"required": true
+		},
+		"corporationID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"agtResearchAgents": {
+		"agentID": {
+			"type": "number",
+			"required": true
+		},
+		"typeID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"invTraits": {
+		"traitID": {
+			"type": "number",
+			"required": true
+		},
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"skillID": {
+			"type": "number",
+			"required": true
+		},
+		"bonus": {
+			"type": "number",
+			"required": true
+		},
+		"bonusText": {
+			"type": "string",
+			"required": true
+		},
+		"unitID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"mapRegionJumps": {
+		"fromRegionID": {
+			"type": "number",
+			"required": true
+		},
+		"toRegionID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"planetSchematics": {
+		"schematicID": {
+			"type": "number",
+			"required": true
+		},
+		"schematicName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"cycleTime": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"invControlTowerResources": {
+		"controlTowerTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"resourceTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"purpose": {
+			"type": "number",
+			"required": true
+		},
+		"quantity": {
+			"type": "number",
+			"required": true
+		},
+		"minSecurityLevel": {
+			"type": "number",
+			"required": true
+		},
+		"factionID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"dgmAttributeTypes": {
+		"attributeID": {
+			"type": "number",
+			"required": true
+		},
+		"attributeName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		},
+		"iconID": {
+			"type": "number",
+			"required": true
+		},
+		"defaultValue": {
+			"type": "number",
+			"required": true
+		},
+		"published": {
+			"type": "number",
+			"required": true
+		},
+		"displayName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"unitID": {
+			"type": "number",
+			"required": true
+		},
+		"stackable": {
+			"type": "number",
+			"required": true
+		},
+		"highIsGood": {
+			"type": "number",
+			"required": true
+		},
+		"categoryID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"staOperationServices": {
+		"operationID": {
+			"type": "number",
+			"required": true
+		},
+		"serviceID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"invMarketGroups": {
+		"marketGroupID": {
+			"type": "number",
+			"required": true
+		},
+		"parentGroupID": {
+			"type": "number",
+			"required": true
+		},
+		"marketGroupName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		},
+		"iconID": {
+			"type": "number",
+			"required": true
+		},
+		"hasTypes": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"dgmEffects": {
+		"effectID": {
+			"type": "number",
+			"required": true
+		},
+		"effectName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"effectCategory": {
+			"type": "string",
+			"required": true
+		},
+		"preExpression": {
+			"type": "string",
+			"required": true
+		},
+		"postExpression": {
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		},
+		"guid": {
+			"type": "string",
+			"required": true
+		},
+		"iconID": {
+			"type": "string",
+			"required": true
+		},
+		"isOffensive": {
+			"type": "number",
+			"required": true
+		},
+		"isAssistance": {
+			"type": "number",
+			"required": true
+		},
+		"durationAttributeID": {
+			"type": "string",
+			"required": true
+		},
+		"trackingSpeedAttributeID": {
+			"type": "string",
+			"required": true
+		},
+		"dischargeAttributeID": {
+			"type": "string",
+			"required": true
+		},
+		"rangeAttributeID": {
+			"type": "string",
+			"required": true
+		},
+		"falloffAttributeID": {
+			"type": "string",
+			"required": true
+		},
+		"disallowAutoRepeat": {
+			"type": "number",
+			"required": true
+		},
+		"published": {
+			"type": "number",
+			"required": true
+		},
+		"displayName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"isWarpSafe": {
+			"type": "number",
+			"required": true
+		},
+		"rangeChance": {
+			"type": "number",
+			"required": true
+		},
+		"electronicChance": {
+			"type": "number",
+			"required": true
+		},
+		"propulsionChance": {
+			"type": "number",
+			"required": true
+		},
+		"distribution": {
+			"type": "string",
+			"required": true
+		},
+		"sfxName": {
+			"type": "string",
+			"required": true
+		},
+		"npcUsageChanceAttributeID": {
+			"type": "string",
+			"required": true
+		},
+		"npcActivationChanceAttributeID": {
+			"type": "string",
+			"required": true
+		},
+		"fittingUsageChanceAttributeID": {
+			"type": "string",
+			"required": true
+		},
+		"modifierInfo": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"skinLicense": {
+		"licenseTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"duration": {
+			"type": "number",
+			"required": true
+		},
+		"skinID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"agtAgents": {
+		"agentID": {
+			"type": "number",
+			"required": true
+		},
+		"divisionID": {
+			"type": "number",
+			"required": true
+		},
+		"corporationID": {
+			"type": "number",
+			"required": true
+		},
+		"locationID": {
+			"type": "number",
+			"required": true
+		},
+		"level": {
+			"type": "number",
+			"required": true
+		},
+		"quality": {
+			"type": "string",
+			"required": true
+		},
+		"agentTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"isLocator": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"skinShip": {
+		"skinID": {
+			"type": "number",
+			"required": true
+		},
+		"typeID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"ramAssemblyLineTypes": {
+		"assemblyLineTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"assemblyLineTypeName": {
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		},
+		"baseTimeMultiplier": {
+			"type": "number",
+			"required": true
+		},
+		"baseMaterialMultiplier": {
+			"type": "number",
+			"required": true
+		},
+		"baseCostMultiplier": {
+			"type": "number",
+			"required": true
+		},
+		"volume": {
+			"type": "number",
+			"required": true
+		},
+		"activityID": {
+			"type": "number",
+			"required": true
+		},
+		"minCostPerHour": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"invGroups": {
+		"groupID": {
+			"type": "number",
+			"required": true
+		},
+		"categoryID": {
+			"type": "number",
+			"required": true
+		},
+		"groupName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"iconID": {
+			"type": "number",
+			"required": true
+		},
+		"useBasePrice": {
+			"type": "number",
+			"required": true
+		},
+		"anchored": {
+			"type": "number",
+			"required": true
+		},
+		"anchorable": {
+			"type": "number",
+			"required": true
+		},
+		"fittableNonSingleton": {
+			"type": "number",
+			"required": true
+		},
+		"published": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"mapDenormalize": {
+		"itemID": {
+			"type": "number",
+			"required": true
+		},
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"groupID": {
+			"type": "number",
+			"required": true
+		},
+		"solarSystemID": {
+			"type": "string",
+			"required": true
+		},
+		"constellationID": {
+			"type": "string",
+			"required": true
+		},
+		"regionID": {
+			"type": "string",
+			"required": true
+		},
+		"orbitID": {
+			"type": "string",
+			"required": true
+		},
+		"x": {
+			"type": "number",
+			"required": true
+		},
+		"y": {
+			"type": "number",
+			"required": true
+		},
+		"z": {
+			"type": "number",
+			"required": true
+		},
+		"radius": {
+			"type": "string",
+			"required": true
+		},
+		"itemName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"security": {
+			"type": "string",
+			"required": true
+		},
+		"celestialIndex": {
+			"type": "string",
+			"required": true
+		},
+		"orbitIndex": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"industryBlueprints": {
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"maxProductionLimit": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"certMasteries": {
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"masteryLevel": {
+			"type": "number",
+			"required": true
+		},
+		"certID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"invTypeMaterials": {
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"materialTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"quantity": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"eveIcons": {
+		"iconID": {
+			"type": "number",
+			"required": true
+		},
+		"iconFile": {
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"key": true,
+			"type": "string",
+			"required": true
+		}
+	},
+	"dgmTypeAttributes": {
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"attributeID": {
+			"type": "number",
+			"required": true
+		},
+		"valueInt": {
+			"type": "string",
+			"required": true
+		},
+		"valueFloat": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"trnTranslationLanguages": {
+		"numericLanguageID": {
+			"type": "number",
+			"required": true
+		},
+		"languageID": {
+			"type": "string",
+			"required": true
+		},
+		"languageName": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"chrAttributes": {
+		"attributeID": {
+			"type": "number",
+			"required": true
+		},
+		"attributeName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		},
+		"iconID": {
+			"type": "number",
+			"required": true
+		},
+		"shortDescription": {
+			"type": "string",
+			"required": true
+		},
+		"notes": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"certCerts": {
+		"certID": {
+			"type": "number",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		},
+		"groupID": {
+			"type": "number",
+			"required": true
+		},
+		"name": {
+			"key": true,
+			"type": "string",
+			"required": true
+		}
+	},
+	"trnTranslationColumns": {
+		"tcGroupID": {
+			"type": "number",
+			"required": true
+		},
+		"tcID": {
+			"type": "number",
+			"required": true
+		},
+		"tableName": {
+			"type": "string",
+			"required": true
+		},
+		"columnName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"masterID": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"mapConstellations": {
+		"regionID": {
+			"type": "number",
+			"required": true
+		},
+		"constellationID": {
+			"type": "number",
+			"required": true
+		},
+		"constellationName": {
+			"type": "string",
+			"required": true
+		},
+		"x": {
+			"type": "number",
+			"required": true
+		},
+		"y": {
+			"type": "number",
+			"required": true
+		},
+		"z": {
+			"type": "number",
+			"required": true
+		},
+		"xMin": {
+			"type": "number",
+			"required": true
+		},
+		"xMax": {
+			"type": "number",
+			"required": true
+		},
+		"yMin": {
+			"type": "number",
+			"required": true
+		},
+		"yMax": {
+			"type": "number",
+			"required": true
+		},
+		"zMin": {
+			"type": "number",
+			"required": true
+		},
+		"zMax": {
+			"type": "number",
+			"required": true
+		},
+		"factionID": {
+			"type": "string",
+			"required": true
+		},
+		"radius": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"industryActivityProducts": {
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"activityID": {
+			"type": "number",
+			"required": true
+		},
+		"productTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"quantity": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"agtAgentsInSpace": {
+		"agentID": {
+			"type": "number",
+			"required": true
+		},
+		"dungeonID": {
+			"type": "number",
+			"required": true
+		},
+		"solarSystemID": {
+			"type": "number",
+			"required": true
+		},
+		"spawnPointID": {
+			"type": "number",
+			"required": true
+		},
+		"typeID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"crpActivities": {
+		"activityID": {
+			"type": "number",
+			"required": true
+		},
+		"activityName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"agtAgentTypes": {
+		"agentTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"agentType": {
+			"key": true,
+			"type": "string",
+			"required": true
+		}
+	},
+	"chrAncestries": {
+		"ancestryID": {
+			"type": "number",
+			"required": true
+		},
+		"ancestryName": {
+			"type": "string",
+			"required": true
+		},
+		"bloodlineID": {
+			"type": "number",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		},
+		"perception": {
+			"type": "number",
+			"required": true
+		},
+		"willpower": {
+			"type": "string",
+			"required": true
+		},
+		"charisma": {
+			"type": "number",
+			"required": true
+		},
+		"memory": {
+			"type": "number",
+			"required": true
+		},
+		"intelligence": {
+			"type": "number",
+			"required": true
+		},
+		"iconID": {
+			"type": "number",
+			"required": true
+		},
+		"shortDescription": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"invUniqueNames": {
+		"itemID": {
+			"type": "number",
+			"required": true
+		},
+		"itemName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"groupID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"ramActivities": {
+		"activityID": {
+			"type": "number",
+			"required": true
+		},
+		"activityName": {
+			"type": "string",
+			"required": true
+		},
+		"iconNo": {
+			"type": "number",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		},
+		"published": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"staStationTypes": {
+		"stationTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"dockEntryX": {
+			"type": "number",
+			"required": true
+		},
+		"dockEntryY": {
+			"type": "number",
+			"required": true
+		},
+		"dockEntryZ": {
+			"type": "number",
+			"required": true
+		},
+		"dockOrientationX": {
+			"type": "number",
+			"required": true
+		},
+		"dockOrientationY": {
+			"type": "number",
+			"required": true
+		},
+		"dockOrientationZ": {
+			"type": "number",
+			"required": true
+		},
+		"operationID": {
+			"type": "string",
+			"required": true
+		},
+		"officeSlots": {
+			"type": "string",
+			"required": true
+		},
+		"reprocessingEfficiency": {
+			"type": "string",
+			"required": true
+		},
+		"conquerable": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"warCombatZoneSystems": {
+		"solarSystemID": {
+			"type": "number",
+			"required": true
+		},
+		"combatZoneID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"industryActivitySkills": {
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"activityID": {
+			"type": "number",
+			"required": true
+		},
+		"skillID": {
+			"type": "number",
+			"required": true
+		},
+		"level": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"invContrabandTypes": {
+		"factionID": {
+			"type": "number",
+			"required": true
+		},
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"standingLoss": {
+			"type": "number",
+			"required": true
+		},
+		"confiscateMinSec": {
+			"type": "number",
+			"required": true
+		},
+		"fineByValue": {
+			"type": "number",
+			"required": true
+		},
+		"attackMinSec": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"invPositions": {
+		"itemID": {
+			"type": "number",
+			"required": true
+		},
+		"x": {
+			"type": "number",
+			"required": true
+		},
+		"y": {
+			"type": "number",
+			"required": true
+		},
+		"z": {
+			"type": "number",
+			"required": true
+		},
+		"yaw": {
+			"type": "string",
+			"required": true
+		},
+		"pitch": {
+			"type": "string",
+			"required": true
+		},
+		"roll": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"dgmTypeEffects": {
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"effectID": {
+			"type": "number",
+			"required": true
+		},
+		"isDefault": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"skinMaterials": {
+		"skinMaterialID": {
+			"type": "number",
+			"required": true
+		},
+		"displayNameID": {
+			"type": "number",
+			"required": true
+		},
+		"materialSetID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"eveGraphics": {
+		"graphicID": {
+			"type": "number",
+			"required": true
+		},
+		"sofFactionName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"graphicFile": {
+			"type": "string",
+			"required": true
+		},
+		"sofHullName": {
+			"type": "string",
+			"required": true
+		},
+		"sofRaceName": {
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"eveUnits": {
+		"unitID": {
+			"type": "number",
+			"required": true
+		},
+		"unitName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"displayName": {
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"chrBloodlines": {
+		"bloodlineID": {
+			"type": "number",
+			"required": true
+		},
+		"bloodlineName": {
+			"type": "string",
+			"required": true
+		},
+		"raceID": {
+			"type": "number",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		},
+		"maleDescription": {
+			"type": "string",
+			"required": true
+		},
+		"femaleDescription": {
+			"type": "string",
+			"required": true
+		},
+		"shipTypeID": {
+			"type": "string",
+			"required": true
+		},
+		"corporationID": {
+			"type": "number",
+			"required": true
+		},
+		"perception": {
+			"type": "number",
+			"required": true
+		},
+		"willpower": {
+			"type": "string",
+			"required": true
+		},
+		"charisma": {
+			"type": "number",
+			"required": true
+		},
+		"memory": {
+			"type": "number",
+			"required": true
+		},
+		"intelligence": {
+			"type": "number",
+			"required": true
+		},
+		"iconID": {
+			"type": "number",
+			"required": true
+		},
+		"shortDescription": {
+			"type": "string",
+			"required": true
+		},
+		"shortMaleDescription": {
+			"type": "string",
+			"required": true
+		},
+		"shortFemaleDescription": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"crpNPCCorporations": {
+		"corporationID": {
+			"type": "number",
+			"required": true
+		},
+		"size": {
+			"type": "string",
+			"required": true
+		},
+		"extent": {
+			"type": "string",
+			"required": true
+		},
+		"solarSystemID": {
+			"type": "number",
+			"required": true
+		},
+		"investorID1": {
+			"type": "string",
+			"required": true
+		},
+		"investorShares1": {
+			"type": "string",
+			"required": true
+		},
+		"investorID2": {
+			"type": "string",
+			"required": true
+		},
+		"investorShares2": {
+			"type": "string",
+			"required": true
+		},
+		"investorID3": {
+			"type": "string",
+			"required": true
+		},
+		"investorShares3": {
+			"type": "string",
+			"required": true
+		},
+		"investorID4": {
+			"type": "string",
+			"required": true
+		},
+		"investorShares4": {
+			"type": "string",
+			"required": true
+		},
+		"friendID": {
+			"type": "number",
+			"required": true
+		},
+		"enemyID": {
+			"type": "number",
+			"required": true
+		},
+		"publicShares": {
+			"type": "number",
+			"required": true
+		},
+		"initialPrice": {
+			"type": "number",
+			"required": true
+		},
+		"minSecurity": {
+			"type": "number",
+			"required": true
+		},
+		"scattered": {
+			"type": "string",
+			"required": true
+		},
+		"fringe": {
+			"type": "string",
+			"required": true
+		},
+		"corridor": {
+			"type": "string",
+			"required": true
+		},
+		"hub": {
+			"type": "string",
+			"required": true
+		},
+		"border": {
+			"type": "string",
+			"required": true
+		},
+		"factionID": {
+			"type": "number",
+			"required": true
+		},
+		"sizeFactor": {
+			"type": "string",
+			"required": true
+		},
+		"stationCount": {
+			"type": "string",
+			"required": true
+		},
+		"stationSystemCount": {
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		},
+		"iconID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"dgmAttributeCategories": {
+		"categoryID": {
+			"type": "number",
+			"required": true
+		},
+		"categoryName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"categoryDescription": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"mapSolarSystemJumps": {
+		"fromRegionID": {
+			"type": "number",
+			"required": true
+		},
+		"fromConstellationID": {
+			"type": "number",
+			"required": true
+		},
+		"fromSolarSystemID": {
+			"type": "number",
+			"required": true
+		},
+		"toSolarSystemID": {
+			"type": "number",
+			"required": true
+		},
+		"toConstellationID": {
+			"type": "number",
+			"required": true
+		},
+		"toRegionID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"mapCelestialStatistics": {
+		"celestialID": {
+			"type": "number",
+			"required": true
+		},
+		"temperature": {
+			"type": "number",
+			"required": true
+		},
+		"spectralClass": {
+			"type": "number",
+			"required": true
+		},
+		"luminosity": {
+			"type": "string",
+			"required": true
+		},
+		"age": {
+			"type": "string",
+			"required": true
+		},
+		"life": {
+			"type": "number",
+			"required": true
+		},
+		"orbitRadius": {
+			"type": "number",
+			"required": true
+		},
+		"eccentricity": {
+			"type": "number",
+			"required": true
+		},
+		"massDust": {
+			"type": "number",
+			"required": true
+		},
+		"massGas": {
+			"type": "number",
+			"required": true
+		},
+		"fragmented": {
+			"type": "number",
+			"required": true
+		},
+		"density": {
+			"type": "number",
+			"required": true
+		},
+		"surfaceGravity": {
+			"type": "number",
+			"required": true
+		},
+		"escapeVelocity": {
+			"type": "number",
+			"required": true
+		},
+		"orbitPeriod": {
+			"type": "number",
+			"required": true
+		},
+		"rotationRate": {
+			"type": "number",
+			"required": true
+		},
+		"locked": {
+			"type": "number",
+			"required": true
+		},
+		"pressure": {
+			"type": "number",
+			"required": true
+		},
+		"radius": {
+			"type": "number",
+			"required": true
+		},
+		"mass": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"ramInstallationTypeContents": {
+		"installationTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"assemblyLineTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"quantity": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"ramAssemblyLineTypeDetailPerCategory": {
+		"assemblyLineTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"categoryID": {
+			"type": "number",
+			"required": true
+		},
+		"timeMultiplier": {
+			"type": "number",
+			"required": true
+		},
+		"materialMultiplier": {
+			"type": "number",
+			"required": true
+		},
+		"costMultiplier": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"invCategories": {
+		"categoryID": {
+			"type": "number",
+			"required": true
+		},
+		"categoryName": {
+			"type": "string",
+			"required": true
+		},
+		"iconID": {
+			"type": "string",
+			"required": true
+		},
+		"published": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"mapUniverse": {
+		"universeID": {
+			"type": "number",
+			"required": true
+		},
+		"universeName": {
+			"type": "string",
+			"required": true
+		},
+		"x": {
+			"type": "number",
+			"required": true
+		},
+		"y": {
+			"type": "number",
+			"required": true
+		},
+		"z": {
+			"type": "number",
+			"required": true
+		},
+		"xMin": {
+			"type": "number",
+			"required": true
+		},
+		"xMax": {
+			"type": "number",
+			"required": true
+		},
+		"yMin": {
+			"type": "number",
+			"required": true
+		},
+		"yMax": {
+			"type": "number",
+			"required": true
+		},
+		"zMin": {
+			"type": "number",
+			"required": true
+		},
+		"zMax": {
+			"type": "number",
+			"required": true
+		},
+		"radius": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"warCombatZones": {
+		"combatZoneID": {
+			"type": "number",
+			"required": true
+		},
+		"combatZoneName": {
+			"type": "string",
+			"required": true
+		},
+		"factionID": {
+			"type": "number",
+			"required": true
+		},
+		"centerSystemID": {
+			"type": "number",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"invMetaTypes": {
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"parentTypeID": {
+			"type": "string",
+			"required": true
+		},
+		"metaGroupID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"invFlags": {
+		"flagID": {
+			"type": "number",
+			"required": true
+		},
+		"flagName": {
+			"type": "string",
+			"required": true
+		},
+		"flagText": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"orderID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"invVolumes": {
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"volume": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"staServices": {
+		"serviceID": {
+			"type": "number",
+			"required": true
+		},
+		"serviceName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"mapRegions": {
+		"regionID": {
+			"type": "number",
+			"required": true
+		},
+		"regionName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"x": {
+			"type": "number",
+			"required": true
+		},
+		"y": {
+			"type": "number",
+			"required": true
+		},
+		"z": {
+			"type": "number",
+			"required": true
+		},
+		"xMin": {
+			"type": "number",
+			"required": true
+		},
+		"xMax": {
+			"type": "number",
+			"required": true
+		},
+		"yMin": {
+			"type": "number",
+			"required": true
+		},
+		"yMax": {
+			"type": "number",
+			"required": true
+		},
+		"zMin": {
+			"type": "number",
+			"required": true
+		},
+		"zMax": {
+			"type": "number",
+			"required": true
+		},
+		"factionID": {
+			"type": "string",
+			"required": true
+		},
+		"nebula": {
+			"type": "number",
+			"required": true
+		},
+		"radius": {
+			"type": "string",
+			"required": true
+		}
+	},
+	"chrFactions": {
+		"factionID": {
+			"type": "number",
+			"required": true
+		},
+		"factionName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		},
+		"description": {
+			"type": "string",
+			"required": true
+		},
+		"raceIDs": {
+			"type": "number",
+			"required": true
+		},
+		"solarSystemID": {
+			"type": "number",
+			"required": true
+		},
+		"corporationID": {
+			"type": "number",
+			"required": true
+		},
+		"sizeFactor": {
+			"type": "number",
+			"required": true
+		},
+		"stationCount": {
+			"type": "string",
+			"required": true
+		},
+		"stationSystemCount": {
+			"type": "string",
+			"required": true
+		},
+		"militiaCorporationID": {
+			"type": "string",
+			"required": true
+		},
+		"iconID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"planetSchematicsPinMap": {
+		"schematicID": {
+			"type": "number",
+			"required": true
+		},
+		"pinTypeID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"mapLocationScenes": {
+		"locationID": {
+			"type": "number",
+			"required": true
+		},
+		"graphicID": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"staStations": {
+		"stationID": {
+			"type": "number",
+			"required": true
+		},
+		"security": {
+			"type": "number",
+			"required": true
+		},
+		"dockingCostPerVolume": {
+			"type": "number",
+			"required": true
+		},
+		"maxShipVolumeDockable": {
+			"type": "number",
+			"required": true
+		},
+		"officeRentalCost": {
+			"type": "number",
+			"required": true
+		},
+		"operationID": {
+			"type": "number",
+			"required": true
+		},
+		"stationTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"corporationID": {
+			"type": "number",
+			"required": true
+		},
+		"solarSystemID": {
+			"type": "number",
+			"required": true
+		},
+		"constellationID": {
+			"type": "number",
+			"required": true
+		},
+		"regionID": {
+			"type": "number",
+			"required": true
+		},
+		"stationName": {
+			"type": "string",
+			"required": true
+		},
+		"x": {
+			"type": "number",
+			"required": true
+		},
+		"y": {
+			"type": "number",
+			"required": true
+		},
+		"z": {
+			"type": "number",
+			"required": true
+		},
+		"reprocessingEfficiency": {
+			"type": "number",
+			"required": true
+		},
+		"reprocessingStationsTake": {
+			"type": "number",
+			"required": true
+		},
+		"reprocessingHangarFlag": {
+			"type": "number",
+			"required": true
+		}
+	},
+	"invNames": {
+		"itemID": {
+			"type": "number",
+			"required": true
+		},
+		"itemName": {
+			"key": true,
+			"type": "string",
+			"required": true
+		}
+	},
+	"industryActivityProbabilities": {
+		"typeID": {
+			"type": "number",
+			"required": true
+		},
+		"activityID": {
+			"type": "number",
+			"required": true
+		},
+		"productTypeID": {
+			"type": "number",
+			"required": true
+		},
+		"probability": {
+			"type": "number",
+			"required": true
+		}
+	}
+}

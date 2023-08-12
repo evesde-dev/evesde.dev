@@ -1,3 +1,5 @@
+import { ObjectId } from "mongodb";
+
 export interface Identifiable {
-    _id: string;
+    _id?: ObjectId;
 }

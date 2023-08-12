@@ -1,29 +1,51 @@
-import bodyParser from 'body-parser';
-import express from 'express';
-import fs from 'fs';
-import https from 'https';
-import './controllers';
-import { appRouter } from './decorators/routable.decorator';
-require('dotenv').config();
+import bodyParser from "body-parser";
+import express from "express";
+import fs from "fs";
+import https from "https";
+import swaggerUI from "swagger-ui-express";
+import "./controllers";
+import { appRouter, swaggerDeff } from "./decorators/routable.decorator";
+require("dotenv").config();
 
 const app = express();
 
 //Setup express
 //Increase maximum 'upload' limits to 50mb, should be overkill.
-app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
-app.use(bodyParser.json({ limit: '50mb' }));
+app.use(bodyParser.urlencoded({ extended: true, limit: "50mb" }));
+app.use(bodyParser.json({ limit: "50mb" }));
 
 //set cors policy to allow any source to access the api
-const cors = require('cors');
+const cors = require("cors");
 app.use(
     cors({
-        origin: '*',
-    }),
+        origin: "*",
+    })
 );
 
 app.use(appRouter);
 
-if (process.env.SSL_ENABLED === 'true') {
+//Setup Swagger
+
+const swaggerDefinition = {
+    info: {
+        title: process.env.SWAG_PAGE_TITLE,
+        version: process.env.SWAG_VERSION,
+        description: process.env.SWAG_PAGE_DESC,
+    },
+    host: process.env.SWAG_HOST,
+    basePath: process.env.SWAG_BASE_PATH,
+};
+
+const options = {
+    failOnErrors: true,
+    swaggerDefinition,
+    apis: ["./src/controllers/**/*.ts"],
+};
+
+appRouter.use("/", swaggerUI.serve);
+appRouter.get("/", swaggerUI.setup(swaggerDeff));
+
+if (process.env.SSL_ENABLED === "true") {
     //Setup SSL
     https
         .createServer(
@@ -31,16 +53,20 @@ if (process.env.SSL_ENABLED === 'true') {
                 key: fs.readFileSync(process.env.SSL_PKEY),
                 cert: fs.readFileSync(process.env.SSL_CERT),
             },
-            app,
+            app
         )
-        .listen(process.env.BACKEND_PORT, () => console.log(`listening on ${process.env.BACKEND_PORT}`));
+        .listen(process.env.BACKEND_PORT, () =>
+            console.log(`listening on ${process.env.BACKEND_PORT}`)
+        );
 } else {
-    app.listen(process.env.BACKEND_PORT, () => console.log(`listening on ${process.env.BACKEND_PORT}`));
+    app.listen(process.env.BACKEND_PORT, () =>
+        console.log(`listening on ${process.env.BACKEND_PORT}`)
+    );
 }
 //Any thrown error will return a 500.
 app.use((err: any, req: any, res: any, next: any) => {
     console.error(err.stack);
-    res.status(500).send('Something broke!');
+    res.status(500).send("Something broke!");
 });
 
 //Any missing page returns a 404 and logs
@@ -50,6 +76,6 @@ app.use((req, res, next) => {
 });
 
 //Catch and log any uncaught exception
-process.on('uncaughtException', (e) => {
+process.on("uncaughtException", (e) => {
     console.error(e);
 });
