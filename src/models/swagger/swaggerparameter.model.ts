@@ -8,6 +8,7 @@ export interface swaggerParameter {
     in: "path" | "body" | "query";
     required?: boolean;
     schema?: any;
+    items?: { [key: string]: string };
 }
 
 export interface swaggerReference {
