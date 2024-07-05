@@ -73,14 +73,15 @@ export default class itemTypesController {
                     invTypes.getFactory()
                 )
             )[0];
-            const group = (
-                await DB.Query(
-                    {
-                        [invGroups._idField]: invType.groupID,
-                    },
-                    invGroups.getFactory()
-                )
-            )[0];
+
+	    const group = (
+	                await DB.Query(
+	                    {
+        	                [invGroups._idField]: invType.groupID,
+	                    },
+                	    invGroups.getFactory()
+        	        )
+	            )[0];
             let marketGroup;
             if (typeof invType.marketGroupID !== "number") {
                 marketGroup = (

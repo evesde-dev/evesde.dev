@@ -1,5 +1,5 @@
 import bodyParser from "body-parser";
-import express from "express";
+import express, { Request, Response } from "express";
 import fs from "fs";
 import https from "https";
 import swaggerUI from "swagger-ui-express";
@@ -37,30 +37,35 @@ const swaggerDefinition = {
 };
 
 const options = {
-    failOnErrors: true,
     swaggerDefinition,
     apis: ["./src/controllers/**/*.ts"],
+    explorer: false
 };
 
-appRouter.use("/", swaggerUI.serve);
-appRouter.get("/", swaggerUI.setup(swaggerDeff));
+appRouter.use("/docs", swaggerUI.serve);
+appRouter.use("/docs", swaggerUI.setup(swaggerDeff, options));
+appRouter.get("/", (req: Request, res: Response) => [res.redirect("/docs")]);
+
+app.get("/swagger.json", (req: Request, res: Response) =>
+    res.status(200).send(JSON.stringify(swaggerDeff))
+);
 
 if (process.env.SSL_ENABLED === "true") {
     //Setup SSL
     https
         .createServer(
             {
-                key: fs.readFileSync(process.env.SSL_PKEY),
-                cert: fs.readFileSync(process.env.SSL_CERT),
+                key: fs.readFileSync(process.env.SSL_PKEY ?? ""),
+                cert: fs.readFileSync(process.env.SSL_CERT ?? ""),
             },
             app
         )
         .listen(process.env.BACKEND_PORT, () =>
-            console.log(`listening on ${process.env.BACKEND_PORT}`)
+            console.log(`listening on ${process.env.BACKEND_PORT ?? ""}`)
         );
 } else {
     app.listen(process.env.BACKEND_PORT, () =>
-        console.log(`listening on ${process.env.BACKEND_PORT}`)
+        console.log(`listening on ${process.env.BACKEND_PORT ?? ""}`)
     );
 }
 //Any thrown error will return a 500.
@@ -71,8 +76,9 @@ app.use((err: any, req: any, res: any, next: any) => {
 
 //Any missing page returns a 404 and logs
 app.use((req, res, next) => {
-    console.warn(`404 ${req.method} ${req.originalUrl}`);
-    res.status(404).send("Sorry can't find that!");
+	console.warn(
+        `${new Date().toISOString()} - 404 - ${req.method} - ${req.originalUrl}`
+    );    res.status(404).send("Sorry can't find that!");
 });
 
 //Catch and log any uncaught exception

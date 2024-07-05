@@ -11,13 +11,13 @@ export const appRouter = Router();
 export const swaggerDeff: swagger = {
     swagger: "2.0",
     info: {
-        title: process.env.SWAG_PAGE_TITLE,
-        description: process.env.SWAG_PAGE_DESC,
-        version: process.env.SWAG_VERSION,
+        title: process.env.SWAG_PAGE_TITLE ?? "",
+        description: process.env.SWAG_PAGE_DESC ?? "",
+        version: process.env.SWAG_VERSION ?? "",
     },
-    host: process.env.SWAG_HOST,
-    basePath: process.env.SWAG_BASE_PATH,
-    schemes: ["http", "https"],
+    host: process.env.SWAG_HOST ?? "",
+    basePath: process.env.SWAG_BASE_PATH ?? "",
+    schemes: ["https"],
     consumes: ["application/json"],
     produces: ["application/json"],
     paths: {},
@@ -37,7 +37,7 @@ export const swaggerDeff: swagger = {
             name: "limit",
             minimum: 1,
             maximum: 100,
-            default: parseInt(process.env.DEFAULT_LIMIT),
+            default: parseInt(process.env.DEFAULT_LIMIT ?? ""),
         },
     },
 };
